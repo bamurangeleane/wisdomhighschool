@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #f8f9fa;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  z-index: 1000;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  z-index: 1000;
+}
+nav {
+  background-color: #e9ecef;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 200px;
+  height: calc(100% - 160px);
+  overflow-y: auto;
+  padding: 20px;
+}
+nav a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #004080;
+}
+aside.right {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 200px;
+  height: calc(100% - 160px);
+  background-color: #e9ecef;
+  padding: 20px;
+  overflow-y: auto;
+}
+main {
+  margin-left: 220px;
+  margin-right: 220px;
+  padding: 20px;
+}
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Gallery Page Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.gallery img {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Page Styles */
+main h2, main h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+main p, main ul {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+main ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Staff Page Styles */
+.staff-section {
+  margin-bottom: 30px;
+}
+.staff-section h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+.staff-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.staff-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Events Page Styles */
+.events-list {
+  margin-top: 20px;
+}
+.events-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.events-list li strong {
+  color: #004080;
+}
+
+/* Contact Page Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #003366;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Reservation Form</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1>FORM 1</h1>
+  <h2>Travel reservation form</h2>
+  <p><strong>*</strong> denotes mandatory</p>
+
+  <form>
+    <label for="fullname">Full name*:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="FirstName LastName" required>
+
+    <label for="email">Email address*:</label>
+    <input type="email" id="email" name="email" placeholder="EMAIL_ADDRESS" required>
+
+    <label for="package">Select Tour Package*:</label>
+    <select id="package" name="package" required>
+      <option value="goa">Goa</option>
+      <option value="kerala">Kerala</option>
+      <option value="manali">Manali</option>
+      <option value="rajasthan">Rajasthan</option>
+    </select>
+
+    <label for="arrival">Arrival date*:</label>
+    <input type="date" id="arrival" name="arrival" required>
+
+    <label for="persons">Number of persons*:</label>
+    <input type="number" id="persons" name="persons" min="1" required>
+
+    <label>What would you want to avail?*</label>
+    <input type="checkbox" id="boarding" name="services" value="boarding">
+    <label for="boarding">Boarding</label>
+    <input type="checkbox" id="fooding" name="services" value="fooding">
+    <label for="fooding">Fooding</label>
+    <input type="checkbox" id="sightseeing" name="services" value="sightseeing">
+    <label for="sightseeing">Sight seeing</label>
+
+    <label for="coupon">Discount Coupon code:</label>
+    <input type="text" id="coupon" name="coupon">
+
+    <label>Terms and conditions*</label>
+    <input type="radio" id="agree" name="terms" value="agree" required>
+    <label for="agree">I agree</label>
+    <input type="radio" id="disagree" name="terms" value="disagree">
+    <label for="disagree">I disagree</label>
+
+    <br><br>
+    <input type="submit" value="Complete reservation">
+  </form>
+
+
+  <h1>FORM 2</h1>
+  <h2>Input Demos</h2>
+
+    <form>
+        <label for="email">Email?</label><br>
+        <input type="email" id="email" name="email" placeholder="email"><br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="password"><br><br>
+
+        <label>What is your gender?</label><br>
+        Male: <input type="radio" name="gender" value="male">
+        Female: <input type="radio" name="gender" value="female"><br><br>
+
+        <label for="color">What is your favorite color?</label><br>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br><br>
+
+        <label for="message">What's on your mind</label><br>
+        <textarea id="message" name="message" rows="6" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <h1>FORM 3</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="salutation">Salutation</label><br>
+            <select id="salutation" name="salutation">
+                <option value="">--None--</option>
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="dr">Dr.</option>
+            </select><br><br>
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            Gender :
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="address">Address :</label><br>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+
+    <h1>FORM 4</h1>
+    <form>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th colspan="2">Registration Form</th>
+            </tr>
+            <tr>
+                <td>Student name</td>
+                <td><input type="text" name="student_name"></td>
+            </tr>
+            <tr>
+                <td>Father's Name</td>
+                <td><input type="text" name="father_name"></td>
+            </tr>
+            <tr>
+                <td>Mother's Name</td>
+                <td><input type="text" name="mother_name"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    male <input type="radio" name="gender" value="male">
+                    female <input type="radio" name="gender" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile No.</td>
+                <td><input type="tel" name="mobile"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="4" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+
+
+    <h1>FORM 5</h1>
+    <h1>My feedback form</h1>
+    <form>
+        <ul>
+            <li>Name: <input type="text" name="name"></li>
+            <li>Email: <input type="email" name="email"></li>
+            <li>Password: <input type="password" name="password"></li>
+
+            <li>
+                Please check all the emotions that apply to you:
+                <ul>
+                    <li><input type="checkbox" name="emotion" value="angry"> Angry</li>
+                    <li><input type="checkbox" name="emotion" value="sad"> Sad</li>
+                    <li><input type="checkbox" name="emotion" value="happy"> Happy</li>
+                    <li><input type="checkbox" name="emotion" value="ambivalent"> Ambivalent</li>
+                </ul>
+            </li>
+
+            <li>
+                How satisfied were you with our service?
+                <ul>
+                    <li><input type="radio" name="satisfaction" value="very_satisfied"> Very satisfied</li>
+                    <li><input type="radio" name="satisfaction" value="satisfied"> Satisfied</li>
+                    <li><input type="radio" name="satisfaction" value="neutral"> Didn't care</li>
+                    <li><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</li>
+                    <li><input type="radio" name="satisfaction" value="very_dissatisfied"> Very dissatisfied</li>
+                </ul>
+            </li>
+
+            <li>Further comments:<br>
+                <textarea name="comments" rows="4" cols="40"></textarea>
+            </li>
+
+            <li>Bio photo: <input type="file" name="bio_photo"></li>
+            <li>
+                Location visited: 
+                <select name="location">
+                    <option value="">Select location</option>
+                    <!-- Add options as needed -->
+                    <option value="location1">Location 1</option>
+                    <option value="location2">Location 2</option>
+                </select>
+            </li>
+        </ul>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
