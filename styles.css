@@ -1,8 +1,11 @@
+/* General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* Body and Layout */
 body {
   font-family: 'Segoe UI', sans-serif;
   padding-top: 100px;
@@ -171,4 +174,49 @@ main ul {
 }
 .contact-form button:hover {
   background-color: #003366;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav, aside.right {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  main {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  header {
+    font-size: 20px;
+    line-height: 80px;
+    height: 80px;
+  }
+  footer {
+    font-size: 14px;
+    line-height: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a, aside.right ul li {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  header {
+    font-size: 18px;
+    line-height: 70px;
+    height: 70px;
+  }
+  footer {
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+  }
 }
